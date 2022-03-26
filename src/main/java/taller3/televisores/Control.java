@@ -3,32 +3,37 @@ package taller3.televisores;
 public class Control {
 	private TV tv;
 	
-	public void TurnOn() {
-		
+	public void turnOn() {
+		tv.turnOn();
 	}	
-	public void TurnOff() {
-		
+	public void turnOff() {
+		tv.turnOff();
 	}
 	
-	public void CanalUp() {
+	public void canalUp() {
+		tv.canalUp();
 		
 	}
-	public void CanalDown() {
+	public void canalDown() {
+		tv.canalDown();
 		
 	}
-	public void VolumenUp() {
+	public void volumenUp() {
+		tv.volumenUp();
 		
 	}
-	public void VolumenOff() {
-		
+	public void volumenOff() {
+		tv.volumenDown();
+	
 	}
 	
 	public void setCanal() {
-		
+		tv.setCanal();
 	}
+	
 	public  void enlazar(TV tv) {
 		this.tv=tv;
-		
+		tv.setControl(this);
 	}
 	
 	public void setTv(TV tv) {
