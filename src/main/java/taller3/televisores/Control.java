@@ -28,7 +28,7 @@ public class Control {
 	}
 	
 	public void setCanal() {
-		tv.setCanal();
+		tv.setCanal(int canal);
 	}
 	
 	public  void enlazar(TV tv) {
