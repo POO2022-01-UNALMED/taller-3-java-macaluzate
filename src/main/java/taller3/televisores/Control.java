@@ -28,14 +28,15 @@ public class Control {
 	}
 	
 	public void setCanal(int canal) {
-		tv.setCanal(canal);
+		if ((canal>=1 && canal<=120) && this.tv.getEstado()== true) {
+			this.tv.setCanal(canal);
+		}
 	}
 	
 	public  void enlazar(TV tv) {
 		this.tv=tv;
-		tv.setControl(this);
+		tv.control=this;
 	}
-	
 	public void setTv(TV tv) {
 		this.tv=tv;
 			
