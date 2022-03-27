@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class TV {
 	private Marca marca;
-	private int canal = 1;
+	private ¿int canal = 1;
 	private int precio= 500;
 	private boolean estado;
 	private int volumen = 1;
@@ -33,7 +33,7 @@ public class TV {
 		
 	}
 	public void setCanal(int canal) {
-		if (estado == true && canal>0 && canal<120){
+		if (estado == true && canal>=1 && canal<=120){
 		this.canal = canal;
 		}
 	}
@@ -83,7 +83,7 @@ public class TV {
 		
 	}
 	public void canalUp(){
-		if (estado == true && canal>0 && canal<120) {
+		if (estado == true && canal>=1 && canal<=120) {
 			canal++;
 			
 		}
